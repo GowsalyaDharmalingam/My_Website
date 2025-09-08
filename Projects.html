@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects | Gowsalya</title>
+  <link rel="stylesheet" href="Projects.css">
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <p>Here are some of the projects I’ve worked on 👩‍💻</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <nav class="filter-bar">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('web')">Web</button>
+    <button onclick="filterProjects('mobile')">Mobile</button>
+    <button onclick="filterProjects('ai')">AI</button>
+  </nav>
+
+  <!-- Projects List -->
+  <main>
+    <!-- Project 1 -->
+    <section class="project web">
+      <h2 onclick="toggleDetails(this)">Portfolio Website ⬇</h2>
+      <div class="details">
+        <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+        <video controls>
+          <source src="WebsiteVideo.mp4" type="video/mp4">
+        </video>
+        <div class="links">
+          <a href="https://github.com/GowsalyaDharmalingam/My_Website.git" target="_blank">🔗 Code</a>
+          <a href="My_Website-main.zip" download>⬇ Download</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 2 -->
+    <section class="project web">
+      <h2 onclick="toggleDetails(this)">Assessment Platform (Front-end)⬇</h2>
+      <div class="details">
+        <p>An Assessment Platform Build with HTML,CSS,JavaScript</p>
+        <video controls>
+          <source src="AssessVideo.mp4" type="video/mp4">
+        </video>
+        <div class="links">
+          <a href="https://github.com/GowsalyaDharmalingam/Hexaware_project_2024.git" target="_blank">🔗 Code</a>
+          <a href="Assessment.zip" download>⬇ Download</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gowsalya | All Rights Reserved</p>
+  </footer>
+
+  <script src="Projects.js"></script>
+</body>
+</html>

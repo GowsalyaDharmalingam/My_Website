@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gowsalya</title>
+  <link rel="icon" href="Images/GYPSY (1).png">
+  <link rel="stylesheet" href="Welcome.css">
+</head>
+<body>
+  <div class="container">
+    <h3 id="greeting"></h3>
+    <p id="datetime"></p>
+    <p><em>"Technology is best when it brings people together."</em></p>
+    <button onclick="showForms()">Click here to Enter</button>
+
+    <!-- Hidden section -->
+    <div id="formSection" class="hidden">
+      <div class="form-container">
+        <!-- HR Form -->
+        <form onsubmit="event.preventDefault(); window.location='Home.html';">
+          <h3>Enter Here as a HR</h3>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- Visitor Form -->
+        <form onsubmit="event.preventDefault(); window.location='Home.html';">
+          <h3>Enter here as a Visitor</h3>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="Welcome.js"></script>
+</body>
+</html>

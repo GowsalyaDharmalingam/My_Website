@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gowsalya - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="icon" href="GYPSY (1).png">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="user-logo">
+      <img src="GYPSY (1).png" alt="User Logo">
+      <h4>GOWSALYA DHARMALINGAM</h4>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Technical Skills</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact Info</a>
+      <a href="#help">Help & Feedback</a>
+      <a href="#forms">Forms</a>
+    </nav>
+    <img src="butfly.jpg" alt="butterfly" id="butterfly">
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <h2 id="greeting"></h2>
+      <p id="datetime"></p>
+      <p><em>"Technology is best when it brings people together."</em></p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="content-box">
+      <h2>About Me</h2>
+      <p>I am an aspiring Software Engineer (Class of 2025) with strong skills in Java, JavaScript, front-end and full-stack development. Passionate about building user-centric digital products, I combine creativity with functionality to deliver seamless experiences. With proven leadership as an NSS Girls Squad Coordinator and confidence as an event host, I bring both technical expertise and interpersonal skills to every project. My goal is to contribute to innovative teams where I can solve real-world problems, continuously learn, and design impactful digital solutions.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills"> <div class="content-box">
+      <h2>Skills</h2>
+      <h4>Technical Skills</h4>
+<ul>
+<li>Programming Languages: Java, JavaScript, HTML, CSS</li>
+<li>UI/UX Design: Figma, Responsive Web Design</li>
+<li>Databases: MySQL</li>
+<li>Development Expertise: Full-stack development, frontend design, database integration</li></ul>
+<h4>Soft Skills</h4>
+<ul>
+<li>Public Speaking & Event Hosting</li>
+<li>Leadership & Team Collaboration</li>
+<li> & Adaptability</li>
+<li>Strong Communication Skills</li></ul>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+         <div class="content-box">
+      <h2>Blog</h2>
+      <p>As a Computer Science engineering student, I’ve always believed that software is more than just lines of code—it’s about crafting meaningful experiences. My projects, like the Assessment Platform UI and Hostel Management System, taught me how powerful it can be when design meets functionality.
+
+What excites me most about tech is its constant evolution. I love experimenting with UI/UX tools like Figma, coding dynamic web applications, and ensuring accessibility in everything I build. Beyond technical work, I enjoy leading initiatives, whether as an NSS coordinator or hosting events, because collaboration and communication are just as important as code.
+
+Looking ahead, I aim to contribute to projects that solve real-world challenges, improve user experiences, and push me to grow as both a developer and a designer.</p></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="content-box">
+          <h2>Contact Info</h2>
+  <!-- Phone -->
+  <p>
+    📞 <a href="tel:+919944169457">+91 9944169457</a>
+  </p>
+
+  <!-- Email -->
+  <p>
+    ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dgowsalya2019@gmail.com" target="_blank">
+  dgowsalya2019@gmail.com
+</a>
+  </p>
+
+  <!-- LinkedIn -->
+  <p>
+    🔗 <a href="https://www.linkedin.com/in/gowsalya-dharmalingam" target="_blank">LinkedIn</a>
+  </p>
+
+  <!-- GitHub -->
+  <p>
+    💻 <a href="https://github.com/GowsalyaDharmalingam" target="_blank">GitHub</a>
+  </p>
+
+      </div>
+    </section>
+
+    <!-- Help -->
+    <section id="help">
+        <div class="content-box">
+      <h2>Help & Feedback</h2>
+      <p>If you have any queries, suggestions, or feedback, feel free to reach out to me. Let’s collaborate!
+         <br><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dgowsalya2019@gmail.com" target="_blank">
+  dgowsalya2019@gmail.com
+</a></p>
+      </div>
+    </section>
+
+    <div class="resume-section">
+  <h3>My Resume</h3>
+  <div class="resume-buttons">
+    <!-- Download Resume -->
+    <a href="Gowsalya D - Resume.pdf" download class="resume-btn">📥 Download Resume</a>
+
+    <!-- View Resume -->
+    <a href="Gowsalya D - Resume.pdf" target="_blank" class="resume-btn view-btn">👀 View Resume</a>
+  </div>
+</div>
+
+    <!-- Forms Section (Bottom - Hidden by default) -->
+    <section id="forms">
+      <h2>Projects 👇</h2>
+      <button class="toggle-btn" onclick="toggleForms()">Show/Hide Forms</button>
+      <div class="form-container hidden" id="formBox">
+        <!-- Visitor Form -->
+<form id="visitorForm">
+  <h4>Enter Here as Visitor</h4>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="hidden" name="role" value="Visitor">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- HR Form -->
+<form id="hrForm">
+  <h4>Enter here as HR</h4>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="hidden" name="role" value="HR">
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function handleFormSubmit(formId) {
+  document.getElementById(formId).addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      role: e.target.role.value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbyhvXNrB2lDJQHH048okrnIfNuzn6ZlT7dyCBsTnB_xwfQLF5gkjH5j2XGJwe3u4lIR/exec", {
+      method: "POST",
+      body: JSON.stringify(data)
+    }).then(() => {
+      // After saving, go to projects page
+      window.location.href = "Projects.html";
+    });
+  });
+}
+handleFormSubmit("visitorForm");
+handleFormSubmit("hrForm");
+</script>
+
+      </div>
+    </section>
+<footer>
+  <p>
+    📞 <a href="tel:+919944169457">+91 9944169457</a>
+    ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dgowsalya2019@gmail.com" target="_blank">
+  dgowsalya2019@gmail.com
+    </a>
+    🔗 <a href="https://www.linkedin.com/in/gowsalya-dharmalingam" target="_blank">LinkedIn</a>
+    💻 <a href="https://github.com/GowsalyaDharmalingam" target="_blank">GitHub</a>
+    🌍 <a href="https://maps.app.goo.gl/gkZYge7WEuPQekR56">Chennai</a>
+  </p>
+</footer>
+  </main>
+
+  <script src="Home.js"></script>
+</body>
+</html>

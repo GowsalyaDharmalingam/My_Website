@@ -1,0 +1,199 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5EFE7;
+  color: #4D4D4D;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #A9957D;
+  padding: 20px;
+  color: white;
+  height:auto;
+  position: relative;
+  top: 0;
+}
+
+.user-logo {
+  text-align: center;
+}
+
+.user-logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.sidebar nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav a {
+  color: #F5EFE7;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.sidebar nav a:hover {
+  background: #675640;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #483507;
+}
+
+/* Forms Section */
+#forms {
+  text-align: center;
+}
+
+.toggle-btn {
+  background: #483507;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #675640;
+}
+
+.form-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  background: #EBE5DD;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  width: 250px;
+}
+
+form h3 {
+  margin-bottom: 15px;
+  color: #675640;
+}
+
+form input, form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #C2BDB5;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #A68B5B;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #675640;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    position: relative;
+  }
+}
+
+section .content-box {
+ background: #A9957D;
+ color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+footer {
+  width: 100%;          /* ✅ full width */
+  background: #675640;  /* dark tone from palette */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #A68B5B;
+}
+
+#butterfly{
+  width: 100px;
+  opacity: 50%;
+  height: auto;
+  position:relative;
+}
+
+/* Resume Section */
+.resume-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #a9957d;   /* your palette color */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #675640;   /* darker shade */
+}
+
+.view-btn {
+  background: #483507;  /* darker accent for view */
+}
+
+.view-btn:hover {
+  background: #a68b5b;
+}

@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F5EFE7;
+  color: #4D4D4D;
+}
+
+/* Header */
+header {
+  background: #A9957D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Filter Bar */
+.filter-bar {
+  text-align: center;
+  padding: 15px;
+  background: #ebe5dd;
+}
+
+.filter-bar button {
+  margin: 5px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #675640;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-bar button:hover {
+  background: #483507;
+}
+
+/* Projects Grid */
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Project Cards */
+.project {
+  background: #ebe5dd;
+  border-left: 6px solid #A68B5B;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project h2 {
+  margin: 0;
+  color: #483507;
+  cursor: pointer;
+}
+
+/* Hidden details initially */
+.details {
+  display: none;
+  margin-top: 10px;
+}
+
+.project video {
+  width: 100%;
+  max-height: 250px;
+  margin: 10px 0;
+  border: 2px solid #A68B5B;
+  border-radius: 10px;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  background: #675640;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #483507;
+}
+
+/* Footer */
+footer {
+  background: #675640;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
